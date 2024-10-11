@@ -1,0 +1,14 @@
+<html>
+<title> ABOUT ME </title>
+<h1 style="font-family:Georgia; text-align:center;> ABOUT ME </h1>
+<body background="C:\Users\Candice\Documents\coquette.jpg">
+<table align="center">
+  <tr>
+  <td>
+   <hr width="640px" color="Black" height="5px" align="left">
+  </td>
+  <td>
+   <h1 align="center">
+    <font size="60px">
+     About
+
