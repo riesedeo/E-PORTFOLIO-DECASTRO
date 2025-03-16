@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>If Else</h2>
+
+<p>Sleep Schedules of the Day:</p>
+
+<p id="demo"></p>
+
+<script>
+const time = new Date().getHours();
+let greeting;
+if (time < 10) {
+  greeting = "Morning nap";
+} else if (time < 20) {
+  greeting = "Noon nap";
+} else {
+  greeting = "Beauty Sleep";
+}
+document.getElementById("demo").innerHTML = greeting;
+</script>
+
+</body>
+</html>
