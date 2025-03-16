@@ -1,23 +1,31 @@
 <!DOCTYPE html>
-<html>
-<head><title>Function</title>
-<script>
-function add()
-fvar A=Number(document.example.firstno.value);
-var B=Number(document.example.secondno.value);
-var C=A+B;
-document.example.sumno.value=C;
-S
-</script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
 </head>
-
 <body>
-<form name="example">
-<input type-"type" name="firstno" value="">+
-<input type"type" name="secondno" value="">=
-<input type="type" name="sumno" value="">
-<br>
-<input type="button" name="addno" value= "Submit" onClick=add()>
-</form>
+
+<h2>Add Two Numbers</h2>
+<input type="number" id="num1" placeholder="First Number">
+<input type="number" id="num2" placeholder="Second Number">
+<button onclick="addNumbers()">Add</button>
+<p id="result"></p>
+
+<script>
+    function addNumbers() {
+        let num1 = parseFloat(document.getElementById("num1").value);
+        let num2 = parseFloat(document.getElementById("num2").value);
+        
+        if (!isNaN(num1) && !isNaN(num2)) {
+            let sum = num1 + num2;
+            document.getElementById("result").innerHTML = The sum is: ${sum};
+        } else {
+            document.getElementById("result").innerHTML = "Please enter valid numbers.";
+        }
+    }
+</script>
+
 </body>
 </html>
