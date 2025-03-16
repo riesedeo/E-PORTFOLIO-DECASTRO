@@ -55,11 +55,23 @@ Come Inside of My Heart - IV of Spades
 </tr>
 </table>
 
+<p> Alert Box </p>
 <button onclick="myFUNCTION()"> Is Cairis sleepy? </button>
 <script>
   function myFUNCTION(){
     alert("YES 100 PERCENT PO T^T");
   }
+
+<p> User-Input Prompt Box </p>
+  <button onclick="show_prompt()"> My name is </button>
+  <p id="message></p><!-- Placeholder for output -->
+  <script type="text/javascript">
+  function show_prompt() {
+    var name = prompt("Fill in the Blanks");
+    if (name !== null && name !==){
+      document.getElementById("message").innerHTML = "My name is" + name + "!"
+      And I want to sleep na.";
+    }}
 </script>
 </body>
 </html>
